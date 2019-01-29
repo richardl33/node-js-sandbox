@@ -35,9 +35,15 @@ function readLine() {
 *   secondString - A string consisting of one or more space-separated words.
 **/
 
-var secondInteger = "5";
-var secondDecimal = "5";
-var secondString = "is the best place to learn and practice coding!";
+var secondInteger = "5",
+secondDecimal = "8.0",
+secondString = "is the best place to learn and practice coding!";
+
+var parseNumbers = function(secArg){
+   var secVal = parseInt(secArg);
+   return secVal;
+}
+
 function performOperation(secondInteger, secondDecimal, secondString) {
     // Declare a variable named 'firstInteger' and initialize with integer value 4.
     const firstInteger = 4;
@@ -49,16 +55,18 @@ function performOperation(secondInteger, secondDecimal, secondString) {
     const firstString = 'HR ';
     
     // Write code that uses console.log to print the sum of the 'firstInteger' and 'secondInteger' (converted to a Number        type) on a new line.
-    var firstSum = firstInteger + parseInt(secondInteger);
+    var firstSum = firstInteger + parseNumbers(secondInteger);
     var firstSumTotal = firstSum;
 
     console.log(firstSumTotal);
     
     // Write code that uses console.log to print the sum of 'firstDecimal' and 'secondDecimal' (converted to a Number            type) on a new line.
-    
+    var secondDecimal = firstDecimal + parseNumbers(secondDecimal);
+    var secondDecimalTotal = secondDecimal;
     
     // Write code that uses console.log to print the concatenation of 'firstString' and 'secondString' on a new line. The        variable 'firstString' must be printed first.
-    
+    var stringConcat = firstString + secondString;
+    console.log(stringConcat);
 }
 
 
