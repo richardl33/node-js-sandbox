@@ -1,28 +1,30 @@
 'use strict';
 
-var s = ['j','a','v','a','s','c','r','i','p','t','l','o','o','p','s'];
-var vowels = ['a', 'e', 'i', 'o', 'u'];
+var s = ['j','a','v','a','s','c','r','i','p','t','l','o','o','p','s'],
+vowels = ['a', 'e', 'i', 'o', 'u'],
+x,
+vLoop;
 
-function vowelsAndConsonants(s) {
-   for (var b = 0; b < vowels.length; b++) {
-      var bLoop = vowels[b];
+function vowelsAndConsonants(s,vowels) {
+   for (x = 0; x < vowels.length; x++) {
+      vLoop = vowels[x];
       for (var a = 0; a < s.length; a++) {
          var aLoop = s[a];
-         if (aLoop == bLoop) {
+         if (aLoop == vLoop) {
             console.log(s[a]);
          }
       }
    }
-   
-   for (var i = 0; i < vowels.length; i++) {
-      var vLoop = vowels[i];
-      for (var i = 0; i < s.length; i++) {
-         var sLoop = s[i];
+
+   for (x = 0; x < vowels.length; x++) {
+      vLoop = vowels[x];
+      for (x = 0; x < s.length; x++) {
+         var sLoop = s[x];
          if (vLoop !== sLoop && vLoop.indexOf('o') == sLoop.indexOf('o') && vLoop.indexOf('i') == sLoop.indexOf('i')) {
-            console.log(s[i]);
+            console.log(s[x]);
          }
       }
    }
 }
 
-vowelsAndConsonants(s);
+vowelsAndConsonants(s,vowels);
