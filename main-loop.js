@@ -1,6 +1,6 @@
 'use strict';
 
-var s = ['j','a','v','a','s','c','r','i','p','t','l','o','o','p','s'],
+var jsString = ['j','a','v','a','s','c','r','i','p','t','l','o','o','p','s'],
 vowels = ['a', 'e', 'i', 'o', 'u'],
 sLoop,
 vLoop,
@@ -29,4 +29,4 @@ function vowelsAndConsonants(s) {
    }
 }
 
-vowelsAndConsonants(s);
+vowelsAndConsonants(jsString);
