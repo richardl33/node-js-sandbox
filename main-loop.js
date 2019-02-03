@@ -12,7 +12,7 @@ function vowelsAndConsonants(s) {
       vLoop = vowels[x];
       for (i = 0; i < s.length; i++) {
          var sLoop = s[i];
-         if (sLoop == vLoop) {
+         if (sLoop === vLoop) {
             console.log(s[i]);
          }
       }
@@ -22,7 +22,7 @@ function vowelsAndConsonants(s) {
       vLoop = vowels[x];
       for (x = 0; x < s.length; x++) {
          sLoop = s[x];
-         if (vLoop !== sLoop && vLoop.indexOf('o') == sLoop.indexOf('o') && vLoop.indexOf('i') == sLoop.indexOf('i')) {
+         if (vLoop !== sLoop && vLoop.indexOf('o') === sLoop.indexOf('o') && vLoop.indexOf('i') === sLoop.indexOf('i')) {
             console.log(s[x]);
          }
       }
