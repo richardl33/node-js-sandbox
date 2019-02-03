@@ -2,22 +2,32 @@
 
 var s = ['j','a','v','a','s','c','r','i','p','t','l','o','o','p','s'];
 var vowels = ['a', 'e', 'i', 'o', 'u'];
+var sLoop;
+var vLoop;
+var vowels;
+var vowelsNull;
 
-function vowelsAndConsonants(s) {
-   for (var x = 0; x < vowels.length; x++) {
-      var vLoop = vowels[x];
-      // console.log(vLoop);
-      for (var i = 0; i < s.length; i++) {
-         var sLoop = s[i]
-         // console.log(sLoop);
-         function vowels() {
-            if (vLoop == sLoop) {
-               console.log(s[i]);
-            }
+function vowelsAndConsonants() {
+   for (var b = 0; b < vowels.length; b++) {
+      var bLoop = vowels[b];
+      for (var a = 0; a < s.length; a++) {
+         var aLoop = s[a];
+         if (aLoop == bLoop) {
+            console.log(s[a]);
          }
+         // if (aLoop !== bLoop && aLoop.indexOf('o') == bLoop.indexOf('o')) {
+         //    console.log(s[a]);
+         // }
       }
    }
-   // console.log(sVowels);
+
+   // for (var i = 0; i < vowels.length; i++) {
+   //    vLoop = vowels[i];
+   //    for (var i = 0; i < s.length; i++) {
+   //       sLoop = s[i];
+
+   //    }
+   // }
 }
 
-vowelsAndConsonants(s);
+vowelsAndConsonants();
